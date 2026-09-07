@@ -1,0 +1,364 @@
+/* =============
+      RESET
+============= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.163);
+       position: sticky;
+    top: 0;
+    z-index: 100;
+ 
+}
+ul{
+    list-style: none;
+}
+li{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* ===============
+  NAVBAR STYLE
+=============== */
+.navbar{
+    width: 85%;
+    height: 55px;
+    margin: auto;
+ 
+}
+
+/* =================
+   MENU STYLE
+================= */
+   .navbar .nav-menu{
+    width: 40%;
+    height: 100%;
+    float: left;
+    margin: auto;
+
+}
+
+.nav-item{
+    float: left;
+    padding: 15px;
+    font-size: 15px;
+    transform: translateY(7px);
+}
+.nav-item a{
+    font-weight: bold;
+}
+/* ==================
+      LOGO
+================== */
+.navbar .nav-logo{
+    width: 25%;
+    height: 100%;
+    float: left;
+    margin: auto;
+    transform: translateY(16px);
+}
+.logo-width{
+    object-fit: contain;
+    min-height: 100px;
+    max-width: 120px;
+    min-height: 25px;
+}
+/* ===================
+      BUTTON
+=================== */
+.navbar .nav-button{
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+/* ================
+  SEARCH BUTTON
+================ */
+/* From Uiverse.io by LightAndy1 */ 
+/* From Uiverse.io by garerim */ 
+.container-input {
+  position: relative;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
+/* ==============
+  USER BUTTON
+============== */
+.user-button li{
+    float: left;
+    padding: 15px;
+}
+.nav-link{
+    transform: translateY(5px);
+    font-size: 20px;
+}
+/* ===============
+   TAPE LIST
+=============== */
+.tape-list{
+    width: 100%;
+    height: 40px;
+}
+.tape-list ul{
+    width: 92%;
+    height: 100%;
+    float: right;
+}
+.tape-list ul li{
+    float: left;
+    margin: 8px 15px 0 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.banner{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .img{
+    width: 100%;
+    height: 800px;
+    background-image: url("https://zandokh.com/image/catalog/banner/2026/ZANDO%20New%20Version/Sale/Mini%20Sale/361%20super%20sale/361_SS_Main_ZANDO%20(2160x1066).jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.banner .nav-link{
+    position: relative;
+    transform: translateY(290px);
+}
+/* =============
+SHOP BUTTON
+============= */
+.button {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.button::before {
+  position: absolute;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #222;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+/* ==================
+   catalog style
+=================== */
+.catalog-container{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  padding: 0 100px;
+}
+.catalog{
+  margin-right: 13px;
+  width: 19%;
+  height: 100%;
+
+}
+
+/* ================
+      POSTER
+================ */
+.poster{
+  width: 100%;
+  height: 700px;
+  padding: 0 20px;
+}
+.poster a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+/* ================
+     FOOTER 
+================ */
+.feature-box{
+  width: 100%;
+  height: 200px;
+  
+}
+.feature-box img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.information-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 70px;
+  overflow: hidden;
+  background-color: #060606;
+}
+.information{
+  width: 16%;
+  height: 250px;
+  margin-right: 10px;
+}
+.info{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.info p{
+  font-weight: bold;
+  color: white;
+}
+.detail img{
+  object-fit: contain;
+}
+
+/* ============
+LINK INFO
+============ */
+.detail ul{
+    list-style: none;
+}
+.detail ul li{
+  margin-bottom: 10px;
+}
+.detail ul li a{
+  color: white;
+}
+.detail p{
+  color: white;
+}
+
+
+
+
+
