@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZANDO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="item-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<script src="img.js"></script>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item"><a href="">WOMEN</a></li>
+                    <li class="nav-item"><a href="">MEN</a></li>
+                    <li class="nav-item"><a href="">KIDS</a></li>
+                    <li class="nav-item"><a href="">LIFESTYLE</a></li>
+                </ul>
+            </div>
+            <div class="nav-logo">
+                <a href=""><img class=logo-width src="https://zandoshops.com/images/logos/ZANDO-NEW-LOGO-2025.png"
+                        alt=""></a>
+            </div>
+            <div class="nav-button">
+
+                <ul class="user-button">
+                    <li>
+                        <div class="search">
+                            <!-- From Uiverse.io by garerim -->
+                            <div class="container-input">
+                                <input type="text" placeholder="Search" name="text" class="input">
+                                <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-link"><a href=""><i class="fa-regular fa-user"></i></a></li>
+                    <li class="nav-link"><a href=""><i class="fa-regular fa-bell"></i></a></li>
+                    <li class="nav-link"><a href=""><i class="fa-solid fa-bag-shopping"></i></a></i></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="tape-list">
+            <ul>
+                <li>New In</li>
+                <li>Clothing</li>
+                <li>Accessories</li>
+                <li>Shoes</li>
+                <li>Collections</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="thumbnails">
+                <div class="thumbnail active" onclick="changeImg(this)">
+                    <img src="pic/shoes1.jpg" alt="Shoes">
+                </div>
+                <div class="thumbnail" onclick="changeImg(this)">
+                    <img src="pic/shoes2.jpg" alt="Shoes">
+                </div>
+                <div class="thumbnail" onclick="changeImg(this)">
+                    <img src="pic/shoes3.jpg" alt="Shoes">
+                </div>
+                <div class="thumbnail" onclick="changeImg(this)">
+                    <img src="pic/shoes4.jpg" alt="Shoes">
+                </div>
+            </div>
+            <div class="main-gallery">
+                <div class="main-image">
+                    <img id="main-image" src="pic/shoes1.jpg" alt="">
+                </div>
+            </div>
+            <div class="detail-container">
+                <p class="text-base">ZANDO</p>
+                <div class="justify">
+                    <p>Chunky Lace-Up Sport Sneakers</p>
+                </div>
+                <div class="price">
+                    <span>$29.99</span>
+                </div>
+                <div class="color">
+                    <p>2 Colors available</p>
+                </div>
+                <div class="shoes-box">
+                    <div class="shoes active" onclick="shoesChange(this)">
+                        <img src="pic/Chunky _white.jpg" alt="">
+                        <p>White</p>
+                    </div>
+                    <div class="shoes" onclick="shoesChange(this)">
+                        <img src="pic/Chunky _black.jpg" alt="">
+                        <p>Black</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p class="size-text">Please select one size</p>
+                <div class="shoes-size">
+                    <button class="size" onclick="change(this)">40</button>
+                    <button class="size" onclick="change(this)">41</button>
+                    <button class="size" onclick="change(this)">42</button>
+                    <button class="size" onclick="change(this)">43</button>
+                </div>
+                <div>
+                    <button class="bag">Add to bag</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="policy">
+                    <div class="shipping">
+                        <img src="pic/shipping.png" width="40px" height="40px">
+                        <p>
+                            Fast delivery from 7 - 15 days.</p>
+                    </div>
+                    <div class="return">
+                        <img src="pic/return.png" width="30px" height="30px">
+                        <p>Return within 14 days after received order!</p>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                    <button class="Description">Description</button>
+                    <p>Step up your street style with these white chunky sport sneakers. Featuring a breathable lace-up
+                        design and a durable, thick cushioned sole, these lightweight casual running shoes are perfect
+                        for daily walking, gym workouts, or weekend wear.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="information-container">
+            <div class="information">
+                <div class="info">
+                    <p>ZANDO App</p>
+                </div>
+                <div class="detail">
+                    <img src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/banner/2026/ZANDO/footer/download-app-white.png" width="220px" height="90px"
+                        alt="">
+                </div>
+            </div>
+            <div class="information">
+                <div class="info">
+                    <p>Help and Contact</p>
+                </div>
+                <div class="detail">
+                    <ul>
+                        <li><a href="#">Online Exchange Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">ZANDO Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Find a Store</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information">
+                <div class="info">
+                    <p>Loyalty</p>
+                </div>
+                <div class="detail">
+                    <ul>
+                        <li><a href="#">Membership & Benefits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information">
+                <div class="info">
+                    <p>Contact Us</p>
+                </div>
+                <div class="detail">
+                    <ul>
+                        <li><p>info@zandokh.com</p></li>
+                        <li><p>(+123) 456 789</p></li>
+                        <li><p>(+123) 456 789</p></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information">
+                <div class="info">
+                    <p>Follow Us</p>
+                </div>
+                <div class="detail">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">ZANDO Career</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="information">
+                <div class="info">
+                    <p>We Accept</p>
+                    <div class="detail">
+                        <img src="https://zand.sgp1.cdn.digitaloceanspaces.com/catalog/logo/web-footer/we-accept-payment%E2%80%93for-web-footer%E2%80%93v2.png" width="200px" height="50px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

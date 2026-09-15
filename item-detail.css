@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.container{
+    width: 85%;
+    overflow: hidden;
+    margin: auto;
+    
+}
+/* ==============
+    Thumbnaiil
+============== */
+.thumbnails{
+    width: 130px;
+    height: 700px;
+    
+    float: left;
+    margin-right: 10px;
+}
+
+.thumbnail{
+    width: 130px;
+
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.thumbnail.active{
+     border: 2px solid #111;
+}
+/* ================
+     GALLERY
+================ */
+.main-gallery{
+    width: 600px;
+    height: 740px;
+    float: left;
+    
+}
+
+.main-image{
+    width: 600px;
+    height: 740px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+.main-image img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+.detail-container{
+    width: 40%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+/* =========== 
+RIGHT PANEL
+=========== */
+.text-base{
+    margin-bottom: 5px;
+}
+.justify p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.price{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.color p{
+    font-size: 17px;
+    margin-top: 35px;
+}
+
+.shoes-box{
+    width: 200px;
+    height: 130px;
+    display: flex;
+}
+
+.shoes-box p{
+    transform: translateX(30px)
+}
+.shoes{
+    margin-right: 5px;
+}
+.shoes img{
+    border: 2px solid rgba(0, 0, 0, 0.266);
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.shoes.active{
+    border: 2px solid #111;
+}
+/* ==========
+shoes size
+========== */
+.size-text{
+    font-weight:bold ;
+}
+.shoes-size{
+    display: flex;
+}
+.shoes-size .size{
+    padding: 10px 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    cursor: pointer;
+    
+}
+.size.active{
+    background-color: #111;
+    color: white;
+}
+button{
+    border: none;
+}
+.shoes-size .size:hover{
+    background-color: rgb(201, 200, 200);
+}
+
+.bag{
+    color: white;
+    background-color: #111;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 410px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+}
+.bag:hover{
+    background-color: rgba(0, 0, 0, 0.716);
+}
+.heart{
+    margin-top: 10px;
+    float: right;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
+.policy{
+    display: flex;
+}
+.shipping{
+    margin-top: 10px;
+    display: flex;
+}
+.shipping p{
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.return{
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+.return p{
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.Description{
+    font-size: 20px;
+    font-weight: bold;
+}
